@@ -1,0 +1,514 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Playfair+Display:ital,wght@0,600;1,900&family=Poppins:wght@200;300&display=swap");
+
+* {
+  /* font-family: 'Dancing Script', cursive; */
+  /* font-family: 'Playfair Display', serif; */
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+  /* color: #222; */
+}
+
+.bg-primaryx{
+  background: #064789;
+}
+
+span:hover i,
+a:hover i{
+  transform: scale(1.1);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Playfair Display", serif;
+}
+small {
+  font-family: "Dancing Script", cursive;
+}
+input.form-control,
+textarea,
+textarea.form-control{
+  background: rgba(255, 255, 255, 0.2);
+}
+footer a {
+  /* color: #ebf2fa; */
+  color: #ccc;
+  text-decoration: none;
+  transition: 0.5s ease all;
+}
+footer a:hover{
+  color: #fff;
+  text-decoration: none;
+}
+footer input.form-control::placeholder,
+footer textarea::placeholder{
+  color: #bbb;
+  /* text-decoration: none; */
+}
+
+.sbutton-box{
+  position: relative;
+  border-radius: 30px;
+}
+
+.stoggle-btn{
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  outline: none;
+  position: relative; 
+}
+.sponsor-side{
+  display: none;
+}
+
+#sbtn{
+  left: 0;
+  top: 0;
+  /* right: 0; */
+  position: absolute;
+  width: 215px;
+  height: 100%;
+  /* background: #e67e22; */
+  background: #064789;
+  border-radius: 30px;
+  transition: .5s;
+}
+
+.header {
+  background: url(../assets/img/childrentour.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.header::before {
+  content: "";
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.header .container h1,
+.header .container p {
+  position: relative;
+  z-index: 1000;
+}
+
+.vision {
+  /* background: #023d8ad7; */
+  background: rgba(0, 0, 255, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+.welcome-video {
+  height: 55vh;
+}
+
+.welcome-video iframe {
+  height: 100%;
+}
+
+.last-section {
+  position: relative;
+  background: url(../assets/img/childrentour.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.last-section::before {
+  content: "";
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.love {
+  /* background: rgba(235, 242, 250, 0.1); */
+  background: rgba(66, 122, 161, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+.transparent-bg-overlay{
+  background: rgba(0, 0, 0, 0.8);
+}
+
+/* about */
+.video-bg {
+  position: relative;
+}
+
+.video-bg video {
+  /* position: absolute; */
+  position: fixed;
+  width: 100%;
+  object-fit: contain;
+}
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* activity page */
+.feature-tpx {
+  background: url(../assets/img/childrentour.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.feature-tpx::before {
+  content: "";
+  background: rgba(0, 0, 0, 0.7);
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.feature-tpx h1,
+.feature-tpx p {
+  z-index: 5;
+}
+
+.about .card,
+.devotion .card,
+.support-cards .card {
+  transition: all 0.5s ease;
+  /* background: rgba(255, 255, 255, 0.1); */
+  background: rgba(66, 122, 161, 0.3);
+  backdrop-filter: blur(10px);
+  box-shadow: 15px 17px 17px rgba(10, 10, 10, 0.2);
+}
+
+.about .card:hover,
+.devotion .card:hover,
+.support-cards .card:hover {
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  box-shadow: 15px 17px 17px rgba(10, 10, 10, 0.5);
+  transform: scale(1.05);
+}
+
+/* gallery custom css */
+
+#gallery-top input {
+  display: none;
+}
+
+#gallery-top label > i {
+  display: none;
+}
+
+@keyframes animate {
+  0% {
+    width: 100px;
+  }
+
+  50% {
+    width: 200px;
+  }
+
+  100% {
+    width: 100px;
+  }
+}
+
+.top-contentX {
+  background-color: rgb(241, 243, 243);
+  width: 90%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.top-contentX label > text,
+.top-contentX label {
+  display: inline-block;
+  height: 100%;
+  margin: 0 20px;
+  line-height: 60px;
+  font-size: 18px;
+  color: gray;
+  cursor: pointer;
+  transition: color 0.5s;
+}
+
+.top-contentX label text:hover {
+  color: black;
+}
+
+.photo-galleryX {
+  width: 100%;
+  margin: auto;
+  border-radius: 10px;
+}
+
+.mround {
+  border-radius: 8px;
+}
+
+[class^="imghvr-"],
+[class*=" imghvr-"] {
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  max-width: 100%;
+  background-color: #f8f9fa;
+  color: #fff;
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+.picX {
+  transition: 0.5s;
+}
+
+.photo-galleryX .picX img {
+  width: 100%;
+  border-radius: 10px;
+  transition: 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+
+#check1:checked ~ .container .photo-galleryX .picX {
+  opacity: 1;
+  transform: scale(1);
+  position: relative;
+  transition: 0.5s;
+}
+
+#check2:checked ~ .container .photo-galleryX .socialX {
+  opacity: 1;
+  transform: scale(1);
+  position: relative;
+  transition: 0.5s;
+}
+
+#check2:checked ~ .container .photo-galleryX .skillsX,
+#check2:checked ~ .container .photo-galleryX .educationX,
+#check2:checked ~ .container .photo-galleryX .spritualX,
+#check2:checked ~ .container .photo-galleryX .healthX {
+  opacity: 0;
+  transform: scale(0);
+  position: absolute;
+  transition: 0.5s;
+}
+
+#check3:checked ~ .container .photo-galleryX .skillsX {
+  opacity: 1;
+  transform: scale(1);
+  position: relative;
+  transition: 0.5s;
+}
+
+#check3:checked ~ .container .photo-galleryX .socialX,
+#check3:checked ~ .container .photo-galleryX .educationX,
+#check3:checked ~ .container .photo-galleryX .spiritualX,
+#check3:checked ~ .container .photo-galleryX .healthX {
+  opacity: 0;
+  transform: scale(0);
+  position: absolute;
+  transition: 0.5s;
+}
+
+#check4:checked ~ .container .photo-galleryX .educationX {
+  opacity: 1;
+  transform: scale(1);
+  position: relative;
+  transition: 0.5s;
+}
+
+#check4:checked ~ .container .photo-galleryX .socialX,
+#check4:checked ~ .container .photo-galleryX .skillsX,
+#check4:checked ~ .container .photo-galleryX .spiritualX,
+#check4:checked ~ .container .photo-galleryX .healthX {
+  opacity: 0;
+  transform: scale(0);
+  position: absolute;
+  transition: 0.5s;
+}
+
+#check5:checked ~ .container .photo-galleryX .spiritualX {
+  opacity: 1;
+  transform: scale(1);
+  position: relative;
+  transition: 0.5s;
+}
+
+#check5:checked ~ .container .photo-galleryX .socialX,
+#check5:checked ~ .container .photo-galleryX .skillsX,
+#check5:checked ~ .container .photo-galleryX .educationX,
+#check5:checked ~ .container .photo-galleryX .healthX {
+  opacity: 0;
+  transform: scale(0);
+  position: absolute;
+  transition: 0.5s;
+}
+
+#check6:checked ~ .container .photo-galleryX .healthX {
+  opacity: 1;
+  transform: scale(1);
+  position: relative;
+  transition: 0.5s;
+}
+
+#check6:checked ~ .container .photo-galleryX .socialX,
+#check6:checked ~ .container .photo-galleryX .skillsX,
+#check6:checked ~ .container .photo-galleryX .educationX,
+#check6:checked ~ .container .photo-galleryX .spiritualX {
+  opacity: 0;
+  transform: scale(0);
+  position: absolute;
+  transition: 0.5s;
+}
+
+.heading {
+  color: #444;
+  font-size: 40px;
+  text-align: center;
+  padding: 10px;
+  font-weight: normal;
+  position: relative;
+  margin: 40px 0;
+}
+
+.heading::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 3px;
+  background-color: #ffc107;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: animate 4s linear infinite;
+}
+
+.containervX {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 15px;
+  align-items: flex-start;
+}
+
+.containervX .main-video {
+  background: #fff;
+  border-radius: 5px;
+  padding: 10px;
+  height: 90%;
+}
+
+.containervX .main-video iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.containervX .main-video .title {
+  color: #333;
+  font-size: 23px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.containervX .video-list {
+  background: #fff;
+  border-radius: 5px;
+  height: 520px;
+  overflow-y: scroll;
+}
+
+.containervX .video-list::-webkit-scrollbar {
+  width: 7px;
+}
+
+.containervX .video-list::-webkit-scrollbar-track {
+  background: #ccc;
+  border-radius: 50px;
+}
+
+.containervX .video-list::-webkit-scrollbar-thumb {
+  background: #2980b9;
+  border-radius: 50px;
+}
+
+.containervX .video-list .vid {
+  display: flex;
+  align-items: center;
+  grid-gap: 15px;
+  grid-gap: 15px;
+  background: #f7f7f7;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.containervX .video-list .vid:hover {
+  background: #eee;
+}
+
+.containervX .video-list .vid.active {
+  background: #2980b9;
+}
+
+.containervX .video-list .vid.active .title {
+  color: #fff;
+}
+
+.containervX .video-list .vid .title {
+  color: #333;
+  font-size: 17px;
+}
+
+.containervX .video-list .vid iframe {
+  width: 100px;
+  height: 70px;
+  border-radius: 5px;
+}
+
+/* contact css */
+.contact-form{
+  background: rgba(66, 122, 161, 0.3);
+  backdrop-filter: blur(10px);
+  box-shadow: 15px 17px 17px rgba(10, 10, 10, 0.2);
+}
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+/* @media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+@media (min-width: 40em) {
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+} */

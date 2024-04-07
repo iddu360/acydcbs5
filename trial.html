@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Messy page</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  
+</head>
+<body>
+  <div class="container bg-secondary">
+    <h1>Hello world</h1>
+    <table class="table table-primary table-striped table-hover table-borderless table-sm table-responsive-sm">
+      <thead>
+        <tr>
+          <th scope="col">id</th>
+          <th scope="col">name</th>
+          <th scope="col">email</th>
+          <th scope="col">contact</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>name1</td>
+          <td>email1</td>
+          <td>contact1</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>name2</td>
+          <td>email2</td>
+          <td>contact2</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="container">
+    <div class="col-md-12 rounded bg-info p-2">
+      <h6>Report Upload</h6>
+      <div class="input-group m-1">
+        <i class="bx bxl-telegram input-group-text">choose file</i>
+        <input type="text" enctype="multipart" class="form-control">
+      </div>
+      <input type="text" placeholder="File name" class="form-control m-1">
+      <select class="form-select m-1" aria-label="Default select example">
+        <option selected>Uploaded By:</option>
+        <option value="1">PD</option>
+        <option value="2">CDO-R</option>
+        <option value="3">CDO-H</option>
+        <option value="3">CDO-SDR</option>
+        <option value="3">CG</option>
+        <option value="3">Support staff</option>
+      </select>
+      <input type="text" placeholder="Your name" class="form-control m-1">
+      <input type="submit" name="submit" value="Submit" class="btn btn-outline-light">
+    </div>
+  </div>
+</body>
+</html>

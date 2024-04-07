@@ -1,0 +1,318 @@
+/* Google Fonts Import Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body::-webkit-scrollbar{
+  width: 7px;
+}
+.video-bg {
+  position: relative;
+}
+
+.video-bg video {
+  /* position: absolute; */
+  position: fixed;
+  width: 100%;
+  object-fit: contain;
+}
+.bg-one{
+  transition: all 0.5s ease;
+  background: rgba(116, 172, 211, 0.3);
+  /* background: rgba(255, 255, 255, 0.4); */
+  backdrop-filter: blur(10px);
+  box-shadow: 15px 17px 17px rgba(10, 10, 10, 0.2);
+}
+/* .centeredhead::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 2px;
+  background-color: #064789;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: animate 4s linear infinite;
+}
+@keyframes animate {
+  0% {
+    width: 100px;
+  }
+
+  50% {
+    width: 200px;
+  }
+
+  100% {
+    width: 100px;
+  }
+} */
+.dsidebar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 260px;
+  background: #064789;
+  z-index: 100;
+  transition: all 0.5s ease;
+}
+.dsidebar.dclose{
+  width: 78px;
+}
+.dsidebar .dlogo-details{
+  height: 60px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.dsidebar .dlogo-details i{
+  font-size: 30px;
+  color: #fff;
+  height: 50px;
+  min-width: 78px;
+  text-align: center;
+  line-height: 50px;
+}
+.dsidebar .dlogo-details .dlogo_name{
+  font-size: 22px;
+  color: #fff;
+  font-weight: 600;
+  transition: 0.3s ease;
+  transition-delay: 0.1s;
+}
+.dsidebar.dclose .dlogo-details .dlogo_name{
+  transition-delay: 0s;
+  opacity: 0;
+  pointer-events: none;
+}
+.dsidebar .dnav-links{
+  height: 100%;
+  padding: 30px 0 150px 0;
+  overflow: auto;
+}
+.dsidebar.dclose .dnav-links{
+  overflow: visible;
+}
+.dsidebar .dnav-links::-webkit-scrollbar{
+  display: none;
+}
+.dsidebar .dnav-links li{
+  position: relative;
+  list-style: none;
+  transition: all 0.4s ease;
+}
+.dsidebar .dnav-links li:hover{
+  /* background: #1d1b31; */
+  background: #427aa1;
+}
+.dsidebar .dnav-links li .diocn-link{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.dsidebar.dclose .dnav-links li .diocn-link{
+  display: block
+}
+.dsidebar .dnav-links li i{
+  height: 50px;
+  min-width: 78px;
+  text-align: center;
+  line-height: 50px;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.dsidebar .dnav-links li.showMenu i.d-arrow{
+  transform: rotate(-180deg);
+}
+.dsidebar.dclose .dnav-links i.d-arrow{
+  display: none;
+}
+.dsidebar .dnav-links li a{
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+.dsidebar .dnav-links li a .dlink_name{
+  font-size: 18px;
+  font-weight: 400;
+  color: #fff;
+  transition: all 0.4s ease;
+}
+.dsidebar.dclose .dnav-links li a .dlink_name{
+  opacity: 0;
+  pointer-events: none;
+}
+.dsidebar .dnav-links li .dsub-menu{
+  padding: 6px 6px 14px 80px;
+  margin-top: -10px;
+  /* background: #1d1b31; */
+  background: #427aa1;
+  display: none;
+}
+.dsidebar .dnav-links li.showMenu .dsub-menu{
+  display: block;
+}
+.dsidebar .dnav-links li .dsub-menu a{
+  color: #fff;
+  font-size: 15px;
+  padding: 5px 0;
+  white-space: nowrap;
+  opacity: 0.6;
+  transition: all 0.3s ease;
+}
+.dsidebar .dnav-links li .dsub-menu a:hover{
+  opacity: 1;
+}
+.dsidebar.dclose .dnav-links li .dsub-menu{
+  position: absolute;
+  left: 100%;
+  top: -10px;
+  margin-top: 0;
+  padding: 10px 20px;
+  border-radius: 0 6px 6px 0;
+  opacity: 0;
+  display: block;
+  pointer-events: none;
+  transition: 0s;
+}
+.dsidebar.dclose .dnav-links li:hover .dsub-menu{
+  top: 0;
+  opacity: 1;
+  pointer-events: auto;
+  transition: all 0.4s ease;
+}
+.dsidebar .dnav-links li .dsub-menu .dlink_name{
+  display: none;
+}
+.dsidebar.dclose .dnav-links li .dsub-menu .dlink_name{
+  font-size: 18px;
+  opacity: 1;
+  display: block;
+}
+.dsidebar .dnav-links li .dsub-menu.dblank{
+  opacity: 1;
+  pointer-events: auto;
+  padding: 3px 20px 6px 16px;
+  opacity: 0;
+  pointer-events: none;
+}
+.dsidebar .dnav-links li:hover .dsub-menu.dblank{
+  top: 50%;
+  transform: translateY(-50%);
+}
+.dsidebar .dprofile-details{
+  position: fixed;
+  bottom: 0;
+  width: 260px;
+  background: #427aa1;
+  transition: all 0.5s ease;
+}
+.dsidebar.dclose .dprofile-details{
+  width: 78px;
+}
+.dsidebar .dprofile-details span{
+  color: #fff;
+  font-size: 18px;
+}
+.dsidebar.dclose .dprofile-details span{
+  display: none;
+}
+.dhome-section{
+  position: relative;
+  height: 100vh;
+  left: 260px;
+  width: calc(100% - 260px);
+  transition: all 0.5s ease;
+}
+.dsidebar.dclose ~ .dhome-section{
+  left: 78px;
+  width: calc(100% - 78px);
+}
+.dhome-section .dhome-content{
+  height: 60px;
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+}
+.dhome-section .dhome-content .dtext{
+  color: black;
+}
+.dhome-section .dhome-content .bx-menu{
+  margin: 0 15px;
+  cursor: pointer;
+  position: fixed;
+  padding: 10px;
+  background: #064789;
+  z-index: 10;
+}
+.dhome-section .dhome-content .dtext{
+  /* font-size: 26px; */
+  font-weight: 600;
+}
+.dhome-section .dhome-content .dicon{
+  display: flex;
+  /* align-content: center; */
+  /* align-items: center; */
+  top: 10%;
+}
+.dhome-section .dhome-content .dprofile .top-dp img{
+  max-height: 50px;
+  border-radius: 50%;
+}
+.dhome-section .updatex img{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+.dhome-section .ac-overview > .dp{
+  display: flex;
+}
+.dhome-section .ac-overview > .dp img{
+  max-height: 100px;
+  border-radius: 50%;
+  margin: auto;
+}
+.dhome-section #blog ul li{
+  cursor: pointer;
+}
+/* --------------------------chartjs css ------------------------------------------ */
+
+.chartCard {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.chartBox {
+  width: 100%;
+  padding: 20px;
+  border-radius: 20px;
+  border: solid 3px rgba(54, 162, 235, 1);
+  background: white;
+}
+@media (max-width: 400px) {
+  .dsidebar.dclose .dnav-links li .dsub-menu{
+    display: none;
+  }
+  .dsidebar{
+    width: 78px;
+  }
+  .dsidebar.dclose{
+    width: 0;
+  }
+  .dhome-section{
+    left: 78px;
+    width: calc(100% - 78px);
+    z-index: 100;
+  }
+  .dsidebar.dclose ~ .dhome-section{
+    width: 100%;
+    left: 0;
+  }
+}

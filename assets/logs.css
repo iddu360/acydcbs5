@@ -1,0 +1,90 @@
+body{
+	height: 100vh;
+}
+
+/* .centerIt{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	top: 50%;
+} */
+
+.video-bg {
+  position: relative;
+}
+
+.video-bg video {
+  /* position: absolute; */
+  position: fixed;
+  width: 100%;
+	height: 100%;
+  /* object-fit: contain; */
+	object-fit: cover;
+}
+
+.loginboxx{
+	width: 100%;
+	background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+	border-radius: 5px;
+	box-shadow: 0 2rem 3rem black;
+	/* top: 50%; */
+	transform: translate(5%,25%);
+}
+
+.avatarx{
+	width: 90px;
+	height: 90px;
+	border-radius: 50%;
+	position: absolute;
+	top: -9%;
+	left: calc(50% - 50px);
+}
+
+.loginboxx .user{
+	background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+	transition: all .4s ease;
+}
+
+.loginboxx .user a,
+.loginboxx .user a i,
+.loginboxx .user a h3{
+	text-decoration: none;
+	color: #fff;
+}
+
+.loginboxx .user:hover{
+	background: #fff;
+	/* transform: rotate(360deg); */
+	transform: scale(1.2);
+	color: #333;
+}
+
+.loginboxx input{
+	background: transparent;
+}
+
+.loginboxx input::placeholder{
+	outline: none;
+	color: #c2b9c2;
+}
+
+.loginboxx form p{
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+
+.loginboxx form a{
+	color: #cfcece;
+}
+
+.loginboxx .error-msg{
+	margin: 10px 0;
+	display: block;
+	background: rgba(225, 0, 0, 0.3);
+	/* background: #000; */
+	color: #fff;
+	border-radius: 5px;
+}
